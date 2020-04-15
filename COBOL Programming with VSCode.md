@@ -1,3 +1,6 @@
+# OPEN MAINFRAME PROJECT
+### 
+
 # Preface
 ## Abstract
 
@@ -13,7 +16,7 @@ The publication is structured as follows:
 
 [Chapter 2. VSCode with Z Open Editor and ZOWE extensions](#_Ref37756556)
 
-[Chapter 3. Installation of VSCode and extensions](_Ref37756571)
+[Chapter 3. Installation of VSCode and extensions](#_Ref37756571)
 #### Part 2 - Learning COBOL
 
 Chapter 4. Basic COBOL
@@ -91,7 +94,7 @@ Left-to-right: Ilicena, Suzy, Makenzie, Martin, Paul, and Tak
  
 ### [Chapter 2. VSCode with Z Open Editor and ZOWE extensions](#_Ref37756556)
  
-### [Chapter 3. Installation of VSCode and extensions](_Ref37756571)
+### [Chapter 3. Installation of VSCode and extensions](#_Ref37756571)
 
 
 <a name="_Ref37756548"></a>
@@ -516,9 +519,9 @@ This chapter covers all aspects of download and installation of Visual Studio (V
 
      - [**Zowe Explorer**](#_Ref37680305)
 
-     - [**IBM Z Open Editor**](_Ref37680313)
+     - [**IBM Z Open Editor**](#_Ref37680313)
 
-- **3.4** [**Summary**](_Ref37753288)
+- **3.4** [**Summary**](#_Ref37753288)
 
 <a name="_Ref34818927"></a>
 
