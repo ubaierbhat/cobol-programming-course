@@ -89,9 +89,9 @@ Left-to-right: Ilicena, Suzy, Makenzie, Martin, Paul, and Tak
  
 ### [Chapter 1. Why COBOL?](#_Ref37756548)
  
-### Chapter 2. VSCode with Z Open Editor and ZOWE extensions
+### [Chapter 2. VSCode with Z Open Editor and ZOWE extensions](#_Ref37756556)
  
-### Chapter 3. Installation of VSCode and extensions
+### [Chapter 3. Installation of VSCode and extensions](_Ref37756571)
 
 
 <a name="_Ref37756548"></a>
