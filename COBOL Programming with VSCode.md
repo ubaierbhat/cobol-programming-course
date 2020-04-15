@@ -1006,33 +1006,33 @@ The COBOL reference format is formatted as follows:
 
 - A multi-purpose area:
 
-o   Comment line (generally an asterisk symbol)
+    - Comment line (generally an asterisk symbol)
 
-o   Continuation line (generally a hyphen symbol)
+    - Continuation line (generally a hyphen symbol)
 
-o   Debugging line (D or d) 
+    - Debugging line (D or d) 
 
-o   Source listing formatting (a slash symbol)
+    - Source listing formatting (a slash symbol)
 #### Area A (columns 8 - 11)
 
 - Certain items must begin in Area A, they are:
 
-o   Level indicators
+    - Level indicators
 
-o   Declarative
+    - Declarative
 
-o   Division, Section, Paragraph headers
+    - Division, Section, Paragraph headers
 
-o   Paragraph names
+    - Paragraph names
 
 - Column 8 is referred to as the A Margin
 #### Area B (columns 12 - 72)
 
 - Certain items must begin in Area B, they are:
 
-o   Entries, sentences, statements, and clauses
+    - Entries, sentences, statements, and clauses
 
-o   Continuation lines
+    - Continuation lines
 
 - Column 12 is referred to as the B Margin
 #### Identification Area (columns 73 - 80)
@@ -1109,28 +1109,17 @@ A COBOL “Paragraph” is a user-defined or predefined name followed by a perio
 
 Example 1.  Division -> paragraph -> sentences
 
-```
-
 ——————————————————————————————————————————————————————
 
-```
 
-Text Box: Division/Section `*------------------`
-
-`PROCEDURE DIVISION.`
-
-Text Box: Paragraph `*------------------`
-
-`OPEN-FILES.`
-
-`OPEN INPUT  ACCT-REC.`
-
-Text Box: Sentences Text Box: Sentences Text Box: Sentences Text Box: Sentences Text Box: Sentences Text Box: Sentences `OPEN OUTPUT PRINT-LINE.`
-
-```
-
-          ——————————————————————————————————————————————————————
-
+Text Box: Division/Section 
+```cobol
+*------------------
+PROCEDURE DIVISION.
+*------------------
+OPEN-FILES.
+    OPEN INPUT  ACCT-REC.
+    OPEN OUTPUT PRINT-LINE.
 ```
 
 <a name="_Ref34921823"></a>
