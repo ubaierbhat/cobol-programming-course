@@ -8,7 +8,7 @@ This project is a set of training materials and labs for a "Getting Started" lev
 
 There are two sets of materials available
 
-- [Chapters](Chapters) which contain the lessons, broken up into chapters.
+- [Chapters](COBOL%20Programming%20with%20VSCode.md) which contain the lessons, broken up into chapters.
 - [Labs](Labs) which contain the source code used in the chapters.
 
 ## Contributing
