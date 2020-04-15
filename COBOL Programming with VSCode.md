@@ -2816,75 +2816,39 @@ There is no requirement about the order that paragraphs should appear within a C
 
 Example 8.  Numbered paragraphs
 
-```
-
-——————————————————————————————————————————————————————
-
-     PERFORM 1000-OPEN-FILES.
-
-     PERFORM 2000-READ-NEXT-RECORD.
-
-     GO TO 3000-CLOSE-STOP.
-
- 1000-OPEN-FILES.   
-
-     OPEN INPUT  ACCT-REC.
-
-     OPEN OUTPUT PRINT-LINE.    
-
-* 
-
- 2000-READ-NEXT-RECORD.   
-
-     PERFORM 4000-READ-RECORD   
-
-     PERFORM UNTIL LASTREC = 'Y'
-
-     PERFORM 5000-WRITE-RECORD  
-
-     PERFORM 4000-READ-RECORD   
-
-     END-PERFORM.   
-
-* 
-
- 3000-CLOSE-STOP.   
-
-     CLOSE ACCT-REC.
-
-     CLOSE PRINT-LINE.    
-
-     STOP RUN.
-
-* 
-
- 4000-READ-RECORD.  
-
-     READ ACCT-REC  
-
-     AT END MOVE 'Y' TO LASTREC 
-
-     END-READ.
-
-* 
-
- 5000-WRITE-RECORD. 
-
-     MOVE ACCT-N    -    TO  ACCT-NO-O. 
-
-     MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.    
-
-     MOVE ACCT-BALANCE TO  ACCT-BALANCE-O.  
-
-     MOVE LAST-NAME    TO  LAST-NAME-O.
-
-     MOVE FIRST-NAME   TO  FIRST-NAME-O.    
-
-     MOVE COMMENTS     TO  COMMENTS-O. 
-
-     WRITE PRINT-REC.
-
-——————————————————————————————————————————————————————
+```cobol
+           PERFORM 1000-OPEN-FILES.
+           PERFORM 2000-READ-NEXT-RECORD.
+           GO TO 3000-CLOSE-STOP.
+       1000-OPEN-FILES.   
+           OPEN INPUT  ACCT-REC.
+           OPEN OUTPUT PRINT-LINE.    
+      * 
+       2000-READ-NEXT-RECORD.   
+           PERFORM 4000-READ-RECORD   
+           PERFORM UNTIL LASTREC = 'Y'
+           PERFORM 5000-WRITE-RECORD  
+           PERFORM 4000-READ-RECORD   
+           END-PERFORM. 
+      *
+       3000-CLOSE-STOP. 
+           CLOSE ACCT-REC.
+           CLOSE PRINT-LINE.    
+           STOP RUN.
+      * 
+       4000-READ-RECORD.  
+           READ ACCT-REC  
+           AT END MOVE 'Y' TO LASTREC 
+           END-READ.
+      * 
+       5000-WRITE-RECORD. 
+           MOVE ACCT-N  -    TO  ACCT-NO-O. 
+           MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.    
+           MOVE ACCT-BALANCE TO  ACCT-BALANCE-O.  
+           MOVE LAST-NAME    TO  LAST-NAME-O.
+           MOVE FIRST-NAME   TO  FIRST-NAME-O.    
+           MOVE COMMENTS     TO  COMMENTS-O. 
+           WRITE PRINT-REC.
 
 ```
 
