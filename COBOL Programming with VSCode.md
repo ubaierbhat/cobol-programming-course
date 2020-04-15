@@ -1935,23 +1935,23 @@ COBOL code used for sequential file handling involves:
 
 - ENVIRONMENT DIVISION.
 
-o   SELECT clauses
+    - SELECT clauses
 
-o   ASSIGN clauses
+    - ASSIGN clauses
 
 - DATA DIVISION.
 
-o   FD statements
+    - FD statements
 
 - PROCEDURE DIVISION.
 
-o   OPEN statements
+    - OPEN statements
 
-o   CLOSE statements
+    - CLOSE statements
 
-o   READ INTO statement
+    - READ INTO statement
 
-o   WRITE FROM statement
+    - WRITE FROM statement
 
  
 
@@ -2870,7 +2870,7 @@ Example 8.  Numbered paragraphs
 
  5000-WRITE-RECORD. 
 
-     MOVE ACCT-NO      TO  ACCT-NO-O. 
+     MOVE ACCT-N    -    TO  ACCT-NO-O. 
 
      MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.    
 
@@ -3407,17 +3407,17 @@ Writing report or column headers requires a structured output layout designed by
 
 - **HEADER-1:**
 
-o   Writes a literal
+    - Writes a literal
 
-o   Example: ‘Financial Report for’
+    - Example: ‘Financial Report for’
 
  
 
 - **HEADER-2:**
 
-o   Writes literals
+    - Writes literals
 
-o   Examples:
+    - Examples:
 
      - ‘Year’ followed by a variable name
 
@@ -3427,9 +3427,9 @@ o   Examples:
 
 - **HEADER-3:**
 
-o   Writes literals
+    - Writes literals
 
-o   Examples:
+    - Examples:
 
      - ‘Account’ followed by FILLER spacing
 
@@ -3441,7 +3441,7 @@ o   Examples:
 
 - **HEADER-4:**
 
-o   Writes dashes followed by FILLER spacing
+    - Writes dashes followed by FILLER spacing
 
 ![](Images/image143.png)
 
@@ -4096,21 +4096,21 @@ The class condition determines whether the content of a data item is alphabetic,
 
 - Numeric
 
-o   IS NUMERIC or IS NOT NUMERIC
+    - IS NUMERIC or IS NOT NUMERIC
 
 - Alphabetic
 
-o   IS ALPHABETIC or IS NOT ALPHABETIC
+    - IS ALPHABETIC or IS NOT ALPHABETIC
 
-o   IS ALPHABETIC-LOWER / ALPHABETIC-UPPER
+    - IS ALPHABETIC-LOWER / ALPHABETIC-UPPER
 
-o   IS NOT ALPHABETIC-LOWER / ALPHABETIC-UPPER
+    - IS NOT ALPHABETIC-LOWER / ALPHABETIC-UPPER
 
 - DBCS
 
-o   IS DBCS or IS NOT DBCS
+    - IS DBCS or IS NOT DBCS
 
-o   IS KANJI or IS NOT KANJI
+    - IS KANJI or IS NOT KANJI
 
  
 
@@ -5502,7 +5502,7 @@ Use the following steps to download and install IBM's Installation Manager.
 
 [`https://developer.ibm.com/mainframe/products/downloads/eclipse-tools/` ](https://developer.ibm.com/mainframe/products/downloads/eclipse-tools/)
 
-o   This will open a page where you can scroll down to locate IBM Developer for z/OS
+    - This will open a page where you can scroll down to locate IBM Developer for z/OS
 
  
 
@@ -5516,7 +5516,7 @@ o   This will open a page where you can scroll down to locate IBM Developer for 
 
 4.      Click either the **Installation Manager install** option or the**Eclipse p2 install** option
 
-o   Note that Installation Manager is preferred as it automates much of the install process.
+    - Note that Installation Manager is preferred as it automates much of the install process.
 
  
 
@@ -5526,9 +5526,9 @@ o   Note that Installation Manager is preferred as it automates much of the inst
 
 6.      Download, unzip and install IBM Installation Manager (IM) and IDz using one of the following options:
 
-o   User install: imLauncherWindowsUser.bat
+    - User install: imLauncherWindowsUser.bat
 
-o   Admin install: imLauncherWindows.bat
+    - Admin install: imLauncherWindows.bat
 
 The process of installing Installation Manager runs unattended.  After it's finished, click **Restart Installation Manager** to install the product.
 
@@ -5549,7 +5549,7 @@ Use the following steps to install IM packages:
 
 2.      Click **Next**
 
-o   Installation Manager will download the software components after resolving references to your operating system and to the Trial Software Repository.
+    - Installation Manager will download the software components after resolving references to your operating system and to the Trial Software Repository.
 
  
 
@@ -5577,9 +5577,9 @@ o   Installation Manager will download the software components after resolving r
 
 8.      From Configuration:
 
-o   Check **Configure my z/OS connection now**
+    - Check **Configure my z/OS connection now**
 
-o   Enter the following values from Figure  2. :
+    - Enter the following values from Figure  2. :
 
 ![](Images/image173.jpg)
 
@@ -5709,7 +5709,7 @@ Typical uses for IDz include but are not limited to:
 
 - Access to Multiple Virtual Storage (MVS), z/OS Unix, Job Entry Subsystem (JES) artifacts from an Eclipse based environment
 
-o   Eclipse is a modern GUI framework - widely used throughout the software development world on new and existing enterprise applications.
+    - Eclipse is a modern GUI framework - widely used throughout the software development world on new and existing enterprise applications.
 
 - Issue z/OS commands directly - from within the Eclipse development environment.
 
@@ -5769,7 +5769,7 @@ For the rest of this chapter, we will use the CBL001.cbl sample program to demon
 
 - Upon launching IDz from your desktop, IDz will prompt you for a "workspace" directory, shown in Figure  2.
 
-o   For this example, we accept the default workspace and click **OK.**
+    - For this example, we accept the default workspace and click **OK.**
 
 ![](Images/image175.jpg)
 
@@ -5799,19 +5799,19 @@ Here are few terms and vocabulary that will be helpful at this point, illustrate
 
 - The entire product (IDz client) you're looking at in Figure 4 is called the Workspace.
 
-o   You can think of this Workspace as analogous to a development workbench - that has several preferences pre-configured.
+    - You can think of this Workspace as analogous to a development workbench - that has several preferences pre-configured.
 
 - The Workspace contains several Perspectives and a perspective is a defined layout for your tools - which are called Views.
 
 - A View is a singular tool for working on some aspect of a z/OS application. There are hundreds of IDz Views, each has a purpose, and in this book, we will use a subset of these views:
 
-o   Editor - a view used to create or modify code
+    - Editor - a view used to create or modify code
 
-o   Remote Systems - a view for accessing code that resides on a mainframe
+    - Remote Systems - a view for accessing code that resides on a mainframe
 
-o   Properties - a view that shows you the attributes of something (often a file characteristics)
+    - Properties - a view that shows you the attributes of something (often a file characteristics)
 
-o   z/OS Projects - a view used to organize specific files for faster access
+    - z/OS Projects - a view used to organize specific files for faster access
 
  
 
@@ -5851,7 +5851,7 @@ The first thing you'll notice is that the COBOL source is highlighted in Figure 
 
 - Variable (field) definitions:
 
-o   Variables are defined elements in your COBOL program that hold data your program will process.
+    - Variables are defined elements in your COBOL program that hold data your program will process.
 
      - The variable names appear black in the editor.
 
@@ -5859,7 +5859,7 @@ o   Variables are defined elements in your COBOL program that hold data your pro
 
 - Remarks:
 
-o   COBOL Remarks are used to document your program's behavior, design, purpose, etc.  In CBL0001, Remarks (which start with an asterisk \* in column 7) are used to separate source lines making the program more legible.
+    - COBOL Remarks are used to document your program's behavior, design, purpose, etc.  In CBL0001, Remarks (which start with an asterisk \* in column 7) are used to separate source lines making the program more legible.
 
  
 
@@ -5910,13 +5910,13 @@ Before doing any development, you could press (simultaneously) **Ctrl+Shift+M.**
 
 - How to change an existing line:
 
-o   Select a line with your mouse cursor and type-over the existing statement.
+    - Select a line with your mouse cursor and type-over the existing statement.
 
      - Note that the standard MS-Windows Shift+Home, Shift+End keys work.
 
 - How to delete a line:
 
-o   To Delete a line, select the line and delete it with the **Delete** key on your PC.
+    - To Delete a line, select the line and delete it with the **Delete** key on your PC.
 
      - Or select the line and press: **Ctrl+X** , this will cut the line copying it to your clipboard.
 
@@ -6005,9 +6005,9 @@ To demonstrate, let's create an error and then see how the editor shows it to us
 
 - Immediately after typing the letter "1" at the end of LASTREC the IDz COBOL parser:
 
-o   Recognized the error and flagged it
+    - Recognized the error and flagged it
 
-o   Added a statement tip (recommendation) to change the spelling to LASTREC
+    - Added a statement tip (recommendation) to change the spelling to LASTREC
 
  
 
@@ -6192,9 +6192,9 @@ Standard ISPF functionality includes:
 
 - Access to MVS files, z/OS Unix and JES artifacts using 3270-data stream (character-based) emulator.
 
-o   Note that there are several ISPF emulation packages available. In this chapter, we'll be demonstrating and discussing ISPF using IDz's "Host Connection Emulation", which is a free component of IDz.
+    - Note that there are several ISPF emulation packages available. In this chapter, we'll be demonstrating and discussing ISPF using IDz's "Host Connection Emulation", which is a free component of IDz.
 
-o   Ultimately, all the host ISPF software functionality is the same, so it won't matter much which product you use.
+    - Ultimately, all the host ISPF software functionality is the same, so it won't matter much which product you use.
 
 - Issue z/OS commands directly.
 
@@ -6204,7 +6204,7 @@ o   Ultimately, all the host ISPF software functionality is the same, so it won'
 
 - Edit MVS files and Datasets.
 
-o   Primary focus of this chapter.
+    - Primary focus of this chapter.
 
  
 
@@ -6252,7 +6252,7 @@ For the rest of this chapter we will use the CBL001.cbl sample program to demons
 
 - IDz will prompt for a "workspace" directory.
 
-o   For the purposes of this book we accept the default workspace and click OK.
+    - For the purposes of this book we accept the default workspace and click OK.
 
 - You will also be prompted for your TSO USERID and PASSWORD.
 
@@ -6263,7 +6263,7 @@ o   For the purposes of this book we accept the default workspace and click OK.
 
 - After IDz has launched - from Remote Systems:
 
-o   Right-click on MVS Files and select: Host Connection Emulator.
+    - Right-click on MVS Files and select: Host Connection Emulator.
 
      - Note that your instructor may have to give specific Connection information, such as the Emulator port.
 
@@ -6453,17 +6453,17 @@ The first thing you will want to do with an open COBOL program file is to naviga
 
 - PF-Key command navigation:
 
-o   PF8 - Scrolls down in the source one physical page at a time.
+    - PF8 - Scrolls down in the source one physical page at a time.
 
-o   PF7 - Scrolls up in the source one physical page at a time.
+    - PF7 - Scrolls up in the source one physical page at a time.
 
 - Command line command navigation: (see Figure  13. ) - note that the commands are not case-sensitive:
 
-o   Bottom - Scrolls to the bottom of the file
+    - Bottom - Scrolls to the bottom of the file
 
-o   Top - Scrolls to the top of file
+    - Top - Scrolls to the top of file
 
-o   Locate nn - Scrolls to the exact line number entered
+    - Locate nn - Scrolls to the exact line number entered
 
      - Locate can be abbreviated to L
 
@@ -6483,35 +6483,35 @@ The ISPF editor contains several dozen tools for doing efficient/effective devel
 
 - Change an existing line:
 
-o   Type-over the existing statement(s).
+    - Type-over the existing statement(s).
 
 - Delete a line:
 
-o   Type a `D` on the line in the Prefix Area.
+    - Type a `D` on the line in the Prefix Area.
 
-o   Type `DD` on a line and `DD` on some line below it to "Block Delete" lines.
+    - Type `DD` on a line and `DD` on some line below it to "Block Delete" lines.
 
 - Repeat a line:
 
-o   Type an `R` on the line in the Prefix Area.
+    - Type an `R` on the line in the Prefix Area.
 
-o   Type `RR` on a line and `RR` on some line below it - to "Block Repeat" lines.
+    - Type `RR` on a line and `RR` on some line below it - to "Block Repeat" lines.
 
 - Insert a line:
 
-o   Type an `I` on one line above where you want the line inserted.
+    - Type an `I` on one line above where you want the line inserted.
 
-o   Type `In` to insert multiple lines.
+    - Type `In` to insert multiple lines.
 
 - Copy a line:
 
-o   Type a `C` on the line in the Prefix Area - and `A` (above) or `B` (below) a line where you want copied line to go.
+    - Type a `C` on the line in the Prefix Area - and `A` (above) or `B` (below) a line where you want copied line to go.
 
-o   Type `CC` on a line and `CC` on some line below it "Block Copy" lines.
+    - Type `CC` on a line and `CC` on some line below it "Block Copy" lines.
 
 - Move a line:
 
-o   Type an `M` on the line in the Prefix Area - and `A` (above) or `B` (below) a line where you want copied line to go.
+    - Type an `M` on the line in the Prefix Area - and `A` (above) or `B` (below) a line where you want copied line to go.
 
 **o** Type `MM` on a line and `MM` on some line below it "Block Move" lines.
 
@@ -6534,7 +6534,7 @@ There are various ways that you can save your work:
 
 - Typing `=X` on the command line exits ISPF edit back to the Primary Option Menu.
 
-o   Note that you will be prompted to save or cancel changes to the file.
+    - Note that you will be prompted to save or cancel changes to the file.
 
  
 
@@ -6570,15 +6570,15 @@ This section demonstrates:
 
 - From Option 2:
 
-o   Type `JCL` on the Other Partitioned files line and press **Enter** to create a list of files in this library
+    - Type `JCL` on the Other Partitioned files line and press **Enter** to create a list of files in this library
 
-o   From the list, hit **tab** three times and select CBL0001J by typing an `S` next to the file name and pressing **Enter.**
+    - From the list, hit **tab** three times and select CBL0001J by typing an `S` next to the file name and pressing **Enter.**
 
-o   Type `sub (or submit)` on the ISPF editor command line and press **Enter.**
+    - Type `sub (or submit)` on the ISPF editor command line and press **Enter.**
 
-o   Jot down - or remember - the JES number assigned to the job, shown in Figure  15.
+    - Jot down - or remember - the JES number assigned to the job, shown in Figure  15.
 
-o   Use the job Outlist tool assigned to you by your shop or instructor to validate results.
+    - Use the job Outlist tool assigned to you by your shop or instructor to validate results.
 
      - There are several different tools by IBM and third-party vendors that support the viewing, saving, printing, etc. of job output.
 
